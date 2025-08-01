@@ -65,7 +65,7 @@ export default function About() {
                 {/* Action Buttons */}
                 <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
                   <a
-                    href="/resume.pdf"
+                    href="/aditya_resume.pdf"
                     download
                     className="flex items-center gap-2 bg-green-600 hover:bg-green-700 px-6 py-3 rounded-lg transition-colors duration-300"
                   >

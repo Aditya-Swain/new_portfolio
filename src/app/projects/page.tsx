@@ -13,33 +13,6 @@ import image6 from "../../../public/images/project/stock1.png"
 
 
 const projects = [
-  {
-    title: "Invoice Billing Application",
-    description:
-      "A full-stack invoice management web application that allows businesses to create, manage, and share invoices seamlessly. The app supports PDF generation, CSV invoice upload, and real-time client communication through email. It features a modern, interactive interface with dynamic tables and charts for better invoice tracking.",
-    technologies: [
-      "React.js",
-      "Django REST",
-      "MySQL",
-      "AG_Grid",
-      "Tailwind CSS",
-      "Material-UI",
-      "Recharts"
-    ],
-    image: image1,  // Replace with an actual image if available
-    github: "#",  // Add your GitHub repository link
-    demo: "https://invoice-rocket.blogswrite.com",  // Add live demo URL if available
-    features: [
-      "User authentication and secure access to invoices",
-      "Create, edit, and delete invoices with itemized details",
-      "Generate professional PDF invoices",
-      "Send invoices to clients via email directly from the app",
-      "Bulk invoice upload through CSV files",
-      "Dynamic and interactive tables with AG-Grid",
-      "Responsive and modern UI using Tailwind CSS and MUI",
-      "REST API backend for scalable and efficient operations"
-    ]
-  },
 
   {
     title: "Cloud Drive",
@@ -66,6 +39,32 @@ const projects = [
       "Asynchronous task processing with Spring Boot Batch & ExecutorService",
       "Real-time task tracking with progress and status updates using Django + MySQL",
       "RESTful microservice architecture for scalability and maintainability"
+    ]
+  }, {
+    title: "Invoice Billing Application",
+    description:
+      "A full-stack invoice management web application that allows businesses to create, manage, and share invoices seamlessly. The app supports PDF generation, CSV invoice upload, and real-time client communication through email. It features a modern, interactive interface with dynamic tables and charts for better invoice tracking.",
+    technologies: [
+      "React.js",
+      "Django REST",
+      "MySQL",
+      "AG_Grid",
+      "Tailwind CSS",
+      "Material-UI",
+      "Recharts"
+    ],
+    image: image1,  // Replace with an actual image if available
+    github: "#",  // Add your GitHub repository link
+    demo: "https://invoice-rocket.blogswrite.com",  // Add live demo URL if available
+    features: [
+      "User authentication and secure access to invoices",
+      "Create, edit, and delete invoices with itemized details",
+      "Generate professional PDF invoices",
+      "Send invoices to clients via email directly from the app",
+      "Bulk invoice upload through CSV files",
+      "Dynamic and interactive tables with AG-Grid",
+      "Responsive and modern UI using Tailwind CSS and MUI",
+      "REST API backend for scalable and efficient operations"
     ]
   },
   {
@@ -233,7 +232,7 @@ export default function Projects() {
                       <FaGithub className="h-5 w-5" />
                       <span>View Code</span>
                     </a>}
-                    { (project.demo != '#') &&
+                    {(project.demo != '#') &&
                       <a
                         href={project.demo}
                         target="_blank"
@@ -243,7 +242,7 @@ export default function Projects() {
                         <FaExternalLinkAlt className="h-4 w-4" />
                         <span>Live Demo</span>
                       </a>
-}
+                    }
                   </div>
                 </div>
               </div>
