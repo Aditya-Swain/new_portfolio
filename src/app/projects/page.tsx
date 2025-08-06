@@ -3,7 +3,7 @@ import { useState } from "react";
 import Image from "next/image";
 import { FaGithub, FaExternalLinkAlt, FaArrowRight } from "react-icons/fa";
 import image1 from "../../../public/images/project/inv_rocket_1.png"
-import image2 from "../../../public/images/project/cloud_drive.png"
+import image2 from "../../../public/images/project/cloud.png"
 import image3 from "../../../public/images/project/your_stock.png"
 import image4 from "../../../public/images/project/banking.png"
 import image5 from "../../../public/images/project/barber_shop.png"
