@@ -8,12 +8,39 @@ import image3 from "../../../public/images/project/your_stock.png"
 import image4 from "../../../public/images/project/banking.png"
 import image5 from "../../../public/images/project/barber_shop.png"
 import image6 from "../../../public/images/project/stock1.png"
+import image7 from "../../../public/images/project/smart_reply.png"
 
 
 
 
 const projects = [
 
+  {
+    title: "SmartReply Chrome Extension",
+    description:
+      "An AI-powered Chrome extension for Gmail and LinkedIn that generates context-aware replies with selectable tones. Designed to save time and improve productivity by instantly crafting professional, friendly, or casual responses using the Gemini API, without leaving the current email or chat window.",
+    technologies: [
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "Spring Boot",
+      "Gemini API",
+      "Chrome Extension Manifest V3",
+      "DOM Manipulation"
+    ],
+    image: image7,  // Replace with an actual screenshot of your extension
+    github: "https://github.com/Aditya-Swain/smart-reply-extension", 
+    demo: "https://www.linkedin.com/posts/aditya-swain-647563289_ai-geminiai-chromeextension-activity-7359199294962171904-dCKC?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEYHCdcB84JYOvuao5zNBx8ZqmSpm70SQm8",  
+    features: [
+      "Custom 'AI Reply' button injected into Gmail and LinkedIn DM UI",
+      "Dropdown tone selector with multiple options like Professional, Casual, and Friendly",
+      "Captures current email or DM content and sends it to a Spring Boot backend",
+      "Generates AI-powered responses in real-time using Gemini API",
+      "Seamlessly integrates with Gmail and LinkedIn without disrupting the native UI",
+      "Lightweight, responsive design built with Manifest V3 for Chrome",
+      "Improves reply efficiency by reducing manual typing time"
+    ]
+  },
   {
     title: "Cloud Drive",
     description:
