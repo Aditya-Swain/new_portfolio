@@ -90,6 +90,7 @@ const SKILLS_DATA = {
     { name: "HTML5/CSS3", level: 90, icon: "🌐" },
     { name: "JavaScript", level: 95, icon: "⚡" },
     { name: "jQuery", level: 85, icon: "🌀" },
+    
   ],
   backend: [
     { name: "Spring Boot", level: 85, icon: "🍃" },
