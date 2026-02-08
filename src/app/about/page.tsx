@@ -12,7 +12,7 @@ import {
   FaGithub,
   FaLinkedin,
 } from "react-icons/fa";
-import mine from "../../../public/images/mine.jpg";
+// import mine from "../../../public/images/mine.jpg";
 
 // --- Data Definitions ---
 
@@ -90,7 +90,7 @@ const SKILLS_DATA = {
     { name: "HTML5/CSS3", level: 90, icon: "🌐" },
     { name: "JavaScript", level: 95, icon: "⚡" },
     { name: "jQuery", level: 85, icon: "🌀" },
-    
+
   ],
   backend: [
     { name: "Spring Boot", level: 85, icon: "🍃" },
@@ -262,7 +262,7 @@ export default function About() {
             <div className="lg:w-1/3">
               <div className="relative w-64 h-64 lg:w-80 lg:h-80 mx-auto group">
                 <Image
-                  src={mine}
+                  src="/images/mine.jpg"
                   alt="Aditya Swain"
                   fill
                   className="rounded-2xl object-cover shadow-2xl transition-transform duration-300 group-hover:scale-105"
