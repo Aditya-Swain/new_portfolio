@@ -119,9 +119,12 @@ const SOFT_SKILLS_DATA = [
   { name: "Creativity", icon: "🎨" },
 ];
 
+
+
 // --- Reusable Components ---
 
-const ContactItem = ({ icon: Icon, label, value }) => (
+// 1. Add "any" type to the props to satisfy TypeScript
+const ContactItem = ({ icon: Icon, label, value }: { icon: any, label: string, value: string }) => (
   <div className="flex items-center gap-3 group">
     <div className="bg-gray-600 p-3 rounded-lg group-hover:bg-green-500/20 transition-colors duration-300">
       <Icon className="text-green-500 h-5 w-5" />
@@ -133,11 +136,11 @@ const ContactItem = ({ icon: Icon, label, value }) => (
   </div>
 );
 
-const SectionCard = ({ icon: Icon, title, children, className = "" }) => (
+const SectionCard = ({ icon: Icon, title, children, className = "" }: { icon: any, title: string, children: React.ReactNode, className?: string }) => (
   <div
     className={`bg-gray-700 rounded-2xl p-8 shadow-xl transform hover:scale-[1.02] transition-transform duration-300 relative overflow-hidden ${className}`}
   >
-    {/* Decorative Backgrounds (Only show if className includes overflow-hidden or manually added) */}
+    {/* Decorative Backgrounds */}
     {className.includes("relative") && (
       <>
         <div className="absolute top-0 right-0 w-32 h-32 bg-blue-500/5 rounded-full blur-3xl"></div>
@@ -161,7 +164,7 @@ const TimelineItem = ({
   date,
   details = [],
   isExperience = false,
-}) => (
+}: { title: string, subtitle: string, date: string, details?: string[], isExperience?: boolean }) => (
   <div
     className={`relative pl-8 border-l-2 ${isExperience
       ? "pb-8 border-green-500/20 group hover:border-green-500/40 transition-colors duration-300"
@@ -213,7 +216,7 @@ const TimelineItem = ({
   </div>
 );
 
-const SkillBar = ({ name, level, icon }) => (
+const SkillBar = ({ name, level, icon }: { name: string, level: number, icon: string }) => (
   <div className="group">
     <div className="flex items-center justify-between mb-2">
       <div className="flex items-center gap-2">
@@ -231,7 +234,7 @@ const SkillBar = ({ name, level, icon }) => (
   </div>
 );
 
-const SkillCategory = ({ title, skills }) => (
+const SkillCategory = ({ title, skills }: { title: string, skills: any[] }) => (
   <div className="space-y-6">
     <div className="flex items-center gap-3">
       <div className="w-1 h-6 bg-green-500 rounded-full"></div>
@@ -244,7 +247,6 @@ const SkillCategory = ({ title, skills }) => (
     </div>
   </div>
 );
-
 // --- Main Component ---
 
 export default function About() {
